@@ -10,12 +10,9 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4f6f8;
   color: #333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
+  padding: 40px 24px;
 }
 
 /* Título */
@@ -60,12 +57,12 @@ button:hover {
 ======================================================= */
 
 .http-summary-section {
+  width: min(1200px, 100%);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 24px;
-  margin: 40px 0;
+  margin: 40px auto;
 }
-
 .http-summary-table {
   width: 100%;
   border-collapse: collapse;
