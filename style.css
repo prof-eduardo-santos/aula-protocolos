@@ -32,7 +32,7 @@ p {
 
 /* Botão */
 button {
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -53,4 +53,72 @@ button:hover {
   font-weight: bold;
   color: #222;
   font-size: 2rem;
+}
+
+/* =======================================================
+   Resumo do Protocolo HTTP
+======================================================= */
+
+.http-summary-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.http-summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.http-summary-table:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.http-summary-table thead {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+}
+
+.http-summary-table thead th {
+  padding: 16px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.http-summary-table tbody td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.http-summary-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.http-summary-table tbody td:first-child {
+  width: 30%;
+  font-weight: 700;
+  color: #1d4ed8;
+  background: #f8fafc;
+}
+
+.http-summary-table tbody td:last-child {
+  color: #374151;
+}
+
+@media (max-width: 768px) {
+  .http-summary-section {
+    grid-template-columns: 1fr;
+  }
 }
