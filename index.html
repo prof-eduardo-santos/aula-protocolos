@@ -1,19 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Aula de Protocolos de Rede</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Aula de Protocolos de Rede</h1>
     <p>Bem-vindo à aula de protocolos de rede!</p>
 
-    <button onclick="requisicao()">Fazer Requisição</button>
+    <!--<button onclick="requisicao()">Fazer Requisição</button>
+    <p id="resposta"></p>-->
+    <section class="http-summary-section">
+      <table class="http-summary-table">
+        <thead>
+          <tr>
+            <th colspan="2">General</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Função</td>
+            <td>Resumo da conversa HTTP</td>
+          </tr>
+          <tr>
+            <td>Mostra</td>
+            <td>URL, método, status e endereço do servidor</td>
+          </tr>
+          <tr>
+            <td>Exemplo</td>
+            <td>GET /aula-protocolos/ — 200 OK ou 304 Not Modified</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <p id="resposta"></p>
+      <table class="http-summary-table">
+        <thead>
+          <tr>
+            <th colspan="2">Request Headers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Função</td>
+            <td>Informações enviadas pelo navegador ao servidor</td>
+          </tr>
+          <tr>
+            <td>Mostra</td>
+            <td>Host, navegador, idioma, tipo de conteúdo aceito e cookies</td>
+          </tr>
+          <tr>
+            <td>Exemplo</td>
+            <td>Host: prof-eduardo-santos.github.io</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="http-summary-table">
+        <thead>
+          <tr>
+            <th colspan="2">Response Headers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Função</td>
+            <td>Informações enviadas pelo servidor ao navegador</td>
+          </tr>
+          <tr>
+            <td>Mostra</td>
+            <td>
+              Status, tipo de conteúdo, cache, data e identificador da versão
+            </td>
+          </tr>
+          <tr>
+            <td>Exemplo</td>
+            <td>Cache-Control: max-age=600</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
