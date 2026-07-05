@@ -13,6 +13,7 @@ body {
   min-height: 100vh;
   text-align: center;
   padding: 40px 24px;
+  margin: 0;
 }
 
 /* Título */
@@ -27,95 +28,70 @@ p {
   font-size: 1.1rem;
 }
 
-/* Botão */
-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  font-size: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-/* Efeito hover */
-button:hover {
-  background-color: #0056b3;
-}
-
-/* Área de resposta */
-#resposta {
+.section-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   margin-top: 20px;
+}
+
+.card {
+  background-color: #fff;
+  color: #007bff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
   font-weight: bold;
-  color: #222;
-  font-size: 2rem;
 }
 
 /* =======================================================
-   Resumo do Protocolo HTTP
+   Página do infográfico
 ======================================================= */
-
-.http-summary-section {
-  width: min(1200px, 100%);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
-  margin: 40px auto;
-}
-.http-summary-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: #ffffff;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+.container {
+  margin: 0;
+  background: #111;
+  font-family: Arial, sans-serif;
 }
 
-.http-summary-table:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+.barra {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 20px;
+  z-index: 10;
 }
 
-.http-summary-table thead {
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  color: #fff;
+.barra button {
+  padding: 8px 12px;
+  cursor: pointer;
 }
 
-.http-summary-table thead th {
-  padding: 16px;
-  font-size: 1.15rem;
-  font-weight: 700;
+.visualizador {
+  padding-top: 80px;
   text-align: center;
 }
 
-.http-summary-table tbody td {
-  padding: 14px 16px;
-  border-bottom: 1px solid #e5e7eb;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.http-summary-table tbody tr:last-child td {
-  border-bottom: none;
-}
-
-.http-summary-table tbody td:first-child {
-  width: 30%;
-  font-weight: 700;
-  color: #1d4ed8;
-  background: #f8fafc;
-}
-
-.http-summary-table tbody td:last-child {
-  color: #374151;
-}
-
-@media (max-width: 768px) {
-  .http-summary-section {
-    grid-template-columns: 1fr;
-  }
+#infografico {
+  width: 90%;
+  max-width: none;
+  transition: width 0.2s;
 }

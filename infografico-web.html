@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Infográfico - Página Web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="barra">
+        <button onclick="alterarZoom(10)">Zoom +</button>
+        <button onclick="alterarZoom(-10)">Zoom -</button>
+        <button onclick="resetarZoom()">100%</button>
+      </div>
+
+      <div class="visualizador">
+        <img
+          id="infografico"
+          src="./img/Infografico_HTTP.png"
+          alt="Infográfico"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
