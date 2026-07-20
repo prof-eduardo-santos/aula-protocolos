@@ -187,9 +187,15 @@ main {
 }
 
 #btn-voltar {
-  background-color: #007bff;
+  background-color: #123b5d;
   color: #ffffff;
   padding: 8px;
   margin-top: 10px;
   border-radius: 5px;
+}
+
+#btn-voltar:hover {
+  transform: translateY(-5px);
+  background-color: #0320d7;
+  padding: 10px;
 }
