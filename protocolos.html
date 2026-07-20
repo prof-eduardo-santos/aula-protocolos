@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Protocolos de Rede</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="hero">
+      <h1>Protocolos de Rede</h1>
+    </header>
+
+    <main>
+      <section class="concept">
+        <h2>Qual é a definição de protocolo de rede?</h2>
+
+        <p>
+          Um protocolo de rede é um conjunto de regras que define como os
+          dispositivos trocam informações entre si.
+        </p>
+      </section>
+
+      <section class="layers">
+        <article class="layer-card">
+          <h2>Camada de Aplicação</h2>
+          <p>Reúne os protocolos utilizados pelos programas e usuários.</p>
+
+          <div class="protocol-grid">
+            <article class="protocol-card">
+              <h3>HTTP</h3>
+              <p>Permite o acesso às páginas da Web.</p>
+            </article>
+
+            <article class="protocol-card">
+              <h3>DNS</h3>
+              <p>Traduz nomes de sites em endereços IP.</p>
+            </article>
+          </div>
+        </article>
+
+        <article class="layer-card">
+          <h2>Camada de Transporte</h2>
+          <p>Realiza a comunicação entre os programas dos dispositivos.</p>
+
+          <div class="protocol-grid">
+            <article class="protocol-card">
+              <h3>TCP</h3>
+              <p>Entrega os dados de forma confiável e ordenada.</p>
+            </article>
+
+            <article class="protocol-card">
+              <h3>UDP</h3>
+              <p>Prioriza a rapidez da comunicação.</p>
+            </article>
+          </div>
+        </article>
+
+        <article class="layer-card">
+          <h2>Camada de Rede</h2>
+          <p>Encaminha os pacotes entre redes diferentes.</p>
+
+          <div class="protocol-grid">
+            <article class="protocol-card">
+              <h3>IP</h3>
+              <p>Identifica os dispositivos e encaminha os pacotes.</p>
+            </article>
+
+            <article class="protocol-card">
+              <h3>DHCP</h3>
+              <p>Fornece automaticamente as configurações da rede.</p>
+            </article>
+          </div>
+        </article>
+
+        <article class="layer-card">
+          <h2>Camada de Enlace</h2>
+          <p>Transmite dados entre dispositivos ligados à mesma rede.</p>
+
+          <div class="protocol-grid">
+            <article class="protocol-card">
+              <h3>Ethernet</h3>
+              <p>Permite a comunicação em redes locais com fio.</p>
+            </article>
+
+            <article class="protocol-card">
+              <h3>Wi-Fi</h3>
+              <p>Permite a comunicação em redes locais sem fio.</p>
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <section class="example">
+        <h2>Exemplo: acesso a um site</h2>
+
+        <div class="protocol-flow">
+          <span>HTTP</span>
+          <span>TCP</span>
+          <span>IP</span>
+          <span>Wi-Fi ou Ethernet</span>
+        </div>
+      </section>
+      <a id="btn-voltar" href="index.html">VOLTAR</a>
+    </main>
+  </body>
+</html>
